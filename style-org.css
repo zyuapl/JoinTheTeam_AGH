@@ -1,0 +1,20 @@
+td {
+    border: 1px solid black;
+    width: 200px;
+    text-align: center;
+}
+
+#notopen {
+    background-color: rgb(255, 255, 56);
+}
+
+#accepted {
+    background-color: rgb(19, 244, 19);
+}
+
+#abort{
+    background-color: rgb(255, 42, 42);
+}
+.btn1 {
+    color: black;
+}

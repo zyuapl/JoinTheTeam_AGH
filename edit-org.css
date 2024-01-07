@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin-top: -1px;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+.container_edit_org {
+    background: rgb(3,103,11);
+    background: linear-gradient(36deg, rgba(3,103,11,1) 0%, rgba(2,0,36,1) 55%, rgba(255,0,0,1) 100%) center / cover;
+    backface-visibility: 0.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.7px;
+    gap: 5rem;
+}
+
+.edit_window {
+    width: 60vw;
+    margin-top: 60px;
+    height: 74vh;
+    background-color: rgba(255, 255, 255, 0.218);
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_edit {
+    padding: 1rem;
+    font-size: large;
+    border-bottom: 1px solid black;
+    width: 80%;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: .8rem;
+}
+
+.form::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.form::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+.form::-webkit-scrollbar-thumb:hover {
+    visibility: visible;
+}
+
+.form-group {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .6rem;
+    width: 100%;
+}
+
+.form-conrtol.textarea {
+    font-family: "Montserrat", sans-serif;
+}
+
+.form-control.textarea.short {
+    resize: none;
+    height: 10vh;
+    width: 80%;
+    border-radius: .8rem;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    background-color: rgba(160, 207, 255, 0.393);
+    border: 3px solid rgba(255, 255, 255, 0.218);
+}
+
+.form-control.textarea.long {
+    resize: none;
+    height: 27vh;
+    width: 80%;
+    border-radius: .8rem;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    background-color: rgba(160, 207, 255, 0.393);
+    border: 3px solid rgba(255, 255, 255, 0.218);
+}
+
+.form-control.textarea.short {
+    padding: 0.5rem;
+    font-size: medium;
+}
+
+.form-control.textarea.long {
+    padding: 1rem;
+    font-size: medium;
+}
+
+.form-control.textarea::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.form-control.textarea::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.form-control.textarea::-webkit-scrollbar-thumb:hover {
+    visibility: visible;
+}
+
+.btn.btn-primary {
+    padding: .4rem .2rem;
+    border-radius: 2rem;
+    width: 20vw;
+    text-align: center;   
+    background-color: #b4ff58b8;
+    color: #002a0d; 
+    font-size: large;
+    letter-spacing: 0.7px;
+}
+
+.btn.btn-primary:hover {
+    background-color: #9fff29b8;
+    font-size: large;
+    color: #002a0d;  
+    transition: .4s;
+    box-shadow: 0 .4rem .8rem #0005;
+}
+
+@media screen and (max-width:940px) {
+    .edit_window {
+        width: 90vw;
+    }
+    .form {
+        gap:1rem;
+    }
+}
+

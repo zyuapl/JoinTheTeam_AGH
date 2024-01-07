@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+* {
+    padding: 0 auto;
+    margin: 0 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    color: rgb(236, 236, 236);
+    background: rgb(3,103,11);
+    background: linear-gradient(36deg, rgba(3,103,11,1) 0%, rgba(2,0,36,1) 55%, rgba(255,0,0,1) 100%);
+}
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: large;
+    justify-content: center;
+    height: 30px;
+    width: 500px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.header-title span:first-child {
+    color: darkolivegreen;
+}
+#second {
+    color: white;
+}
+
+#third {
+    color: maroon;
+}
+
+.logowanie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+a {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+}
+a:hover {
+background-color: rgb(12, 144, 142);
+    border-radius: 10px;
+    transition: 400ms;
+    color: white;
+    box-shadow: rgba(89, 89, 89, 1) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.choose {
+    display: flex;
+    height: 30px;
+}

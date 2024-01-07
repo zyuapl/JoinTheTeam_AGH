@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin-top: -1px;
+    height: 100vh;
+    border: 1px solid black;
+    background: rgb(3,103,11);
+    background: linear-gradient(36deg, rgba(3,103,11,1) 0%, rgba(2,0,36,1) 55%, rgba(255,0,0,1) 100%) center / cover;
+    backface-visibility: 0.5;
+}
+
+.container_set {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.7px;
+    gap: 5rem;
+}
+
+.org_set {
+    width: 50vw;
+    margin-top: 60px;
+    height: 70vh;
+    overflow: auto;
+    display: flex;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, 0.322);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.desc::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.desc::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+.desc:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+.my_site {
+    display: flex;
+    flex-direction: column;
+}
+
+.desc {
+    border-top: 1px solid black;
+    padding: 1rem 0.5rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc.button {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.desc.short {
+    max-height: 20vh;
+}
+.desc.long {
+
+    overflow: auto;
+}
+
+.org-add {
+    width: 600px;
+    margin-top: 60px;
+    height: 20vh;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.322);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+}
+
+.aa {
+    padding: .4rem .2rem;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 100px;
+    background-color: #e4db86;
+    color: #272727;
+    border: 1px solid black;
+}
+
+.add_pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    padding: .4rem .2rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    min-width: 100px;
+    background-color: #ffc3f3;
+    color: #272727;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 1200px) {
+    .org_set {
+        flex-direction: column;
+        align-items: center;
+        min-width: 90%;
+    }
+    .org_set::-webkit-scrollbar {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    
+    .org_set::-webkit-scrollbar-thumb {
+        border-radius: .5rem;
+        background-color: #0004;
+        visibility: hidden;
+    }
+    .org_set:hover::-webkit-scrollbar-thumb {
+        visibility: visible;
+    }
+
+}
